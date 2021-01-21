@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Welcome to SpeedTest</mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Ip To Ping </mat-label>
+            <input matInput [(ngModel)]="IpInput" />
+        </mat-form-field>
+
+        <button mat-flat-button color="accent"
+        (click)="TestConnection();"
+        >
+        Test Connection
+        </button>
+        
+        <br>
+        <span> The Ping is : <h2>{{ APIPing }}</h2></span>
+        <br>
+    </mat-card-content>
+</mat-card>

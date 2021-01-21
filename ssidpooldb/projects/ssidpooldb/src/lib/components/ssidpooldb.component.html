@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Welcome to ssidpooldb</mat-card-title>
+    <mat-card-content>
+        <button mat-flat-button color="accent"
+        (click)="GetSSIDSavedPool();"
+        >
+        Retrive Data 
+        </button>
+        <ul>
+            <li *ngFor="let elements of SSIDPoolArray; let i = index">
+                <ul>
+                    <li *ngFor="let element of elements; let a = index">
+                       {{i}}, {{element.username}}, {{element.uid}}, {{element.age}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </mat-card-content>
+</mat-card>
