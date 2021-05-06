@@ -14,7 +14,7 @@ export class ssidpooldbComponent implements OnInit {
             module: 'ssidpooldb',
             action: 'GetSSIDSavedPool'
         }, (response) => {
-            console.log(response);
+            
             this.SSIDPoolArray = response;
             
         })
